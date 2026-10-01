@@ -1,0 +1,10 @@
+# Allowlist: this repo is PUBLIC. Only the static test site may ever be committed.
+# Everything is ignored except the files below — an env file or key dropped here stays local.
+*
+!.gitignore
+!.nojekyll
+!index.html
+!CNAME
+!.well-known/
+!.well-known/polygraph-audit-verify/
+!.well-known/polygraph-audit-verify/*.txt
