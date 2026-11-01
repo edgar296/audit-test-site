@@ -8,3 +8,7 @@
 !.well-known/
 !.well-known/polygraph-audit-verify/
 !.well-known/polygraph-audit-verify/*.txt
+!contact/
+!contact/index.html
+!contact/thanks/
+!contact/thanks/index.html

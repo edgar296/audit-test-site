@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подписка на новости</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f6f7f9; color: #1d2330; margin: 0; }
+    main { max-width: 420px; margin: 64px auto; padding: 32px; background: #fff; border-radius: 8px;
+           box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    p { margin: 0 0 24px; color: #555; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input { width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 16px;
+            border: 1px solid #c8ccd4; border-radius: 6px; margin-bottom: 16px; }
+    button { width: 100%; padding: 12px; font-size: 16px; font-weight: 600; color: #fff;
+             background: #2563eb; border: 0; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Подпишитесь на новости</h1>
+    <p>Оставьте e-mail, и мы будем присылать вам новости.</p>
+    <form id="subscribe" method="GET" action="/contact/thanks/">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      <button type="submit">Подтвердить</button>
+    </form>
+  </main>
+</body>
+</html>
