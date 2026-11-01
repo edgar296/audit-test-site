@@ -1,30 +1,43 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Подписка на новости</title>
+  <title>Contact — Harbor Lane Coffee</title>
   <style>
-    body { font-family: system-ui, sans-serif; background: #f6f7f9; color: #1d2330; margin: 0; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: #faf6f1; color: #2b211a; margin: 0; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;
+             background: #3b2416; color: #fff; }
+    header a { color: inherit; text-decoration: none; }
+    .logo { font-family: Georgia, serif; font-size: 22px; font-weight: bold; }
+    nav a { margin-left: 28px; font-size: 15px; }
     main { max-width: 420px; margin: 64px auto; padding: 32px; background: #fff; border-radius: 8px;
-           box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    h1 { font-size: 24px; margin: 0 0 8px; }
-    p { margin: 0 0 24px; color: #555; }
+           box-shadow: 0 2px 8px rgba(43,33,26,.08); }
+    h1 { font-family: Georgia, serif; font-size: 26px; margin: 0 0 8px; }
+    p { margin: 0 0 24px; color: #5a4d42; }
     label { display: block; font-weight: 600; margin-bottom: 6px; }
-    input { width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 16px;
-            border: 1px solid #c8ccd4; border-radius: 6px; margin-bottom: 16px; }
-    button { width: 100%; padding: 12px; font-size: 16px; font-weight: 600; color: #fff;
-             background: #2563eb; border: 0; border-radius: 6px; cursor: pointer; }
+    input { width: 100%; padding: 10px 12px; font-size: 16px; border: 1px solid #cbbfb2; border-radius: 6px; margin-bottom: 16px; }
+    button { width: 100%; padding: 12px; font-size: 16px; font-weight: 600; color: #2b211a;
+             background: #f4c27a; border: 0; border-radius: 6px; cursor: pointer; }
+    @media (max-width: 600px) { header { padding: 16px 20px; } nav a { margin-left: 16px; } main { margin: 32px 16px; } }
   </style>
 </head>
 <body>
+  <header>
+    <a class="logo" href="/">Harbor Lane Coffee</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
   <main>
-    <h1>Подпишитесь на новости</h1>
-    <p>Оставьте e-mail, и мы будем присылать вам новости.</p>
+    <h1>Subscribe to our newsletter</h1>
+    <p>Leave your e-mail and we'll let you know when new roasts arrive.</p>
     <form id="subscribe" method="GET" action="/contact/thanks/">
       <label for="email">E-mail</label>
       <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-      <button type="submit">Подтвердить</button>
+      <button type="submit">Confirm</button>
     </form>
   </main>
 </body>

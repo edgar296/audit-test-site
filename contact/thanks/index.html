@@ -1,22 +1,36 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Спасибо за подписку</title>
+  <title>Thank you — Harbor Lane Coffee</title>
   <style>
-    body { font-family: system-ui, sans-serif; background: #f6f7f9; color: #1d2330; margin: 0; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: #faf6f1; color: #2b211a; margin: 0; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;
+             background: #3b2416; color: #fff; }
+    header a { color: inherit; text-decoration: none; }
+    .logo { font-family: Georgia, serif; font-size: 22px; font-weight: bold; }
+    nav a { margin-left: 28px; font-size: 15px; }
     main { max-width: 420px; margin: 64px auto; padding: 32px; background: #fff; border-radius: 8px;
-           box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    h1 { font-size: 24px; margin: 0 0 8px; }
-    a { color: #2563eb; }
+           box-shadow: 0 2px 8px rgba(43,33,26,.08); }
+    h1 { font-family: Georgia, serif; font-size: 26px; margin: 0 0 8px; }
+    main a { color: #a0612f; }
+    @media (max-width: 600px) { header { padding: 16px 20px; } nav a { margin-left: 16px; } main { margin: 32px 16px; } }
   </style>
 </head>
 <body>
+  <header>
+    <a class="logo" href="/">Harbor Lane Coffee</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
   <main>
-    <h1>Спасибо!</h1>
-    <p>Мы отправим вам e-mail для подтверждения подписки.</p>
-    <p><a href="/contact/">Вернуться</a></p>
+    <h1>Thank you!</h1>
+    <p>We'll send you an e-mail to confirm your subscription.</p>
+    <p><a href="/">Back to the home page</a></p>
   </main>
 </body>
 </html>
